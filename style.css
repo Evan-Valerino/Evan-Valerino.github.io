@@ -1216,7 +1216,9 @@ ul li:nth-child(even) .circle {
 }
 
 .Plan22 {
-  background-image: linear-gradient(to right, #FF96A9, #FF96A9);
+  background-image: linear-gradient(to right,  #D64F4F,#D64F4F);
+  border:none;
+  border-radius:3px;
   height: 2em;
   width: 8em;
   font-size: 1em;
