@@ -23,7 +23,7 @@ close22.forEach(element=> {
 	element.addEventListener('click',()=>toggleOff('#reseau_page'));
 	element.addEventListener('click',()=>toggleOff('#programmation_page'));
 	element.addEventListener('click',()=>toggleOff('#archi_page'));
-	element.addEventListener('click',()=>toggleOff('#archi1'));
+	element.addEventListener('click',()=>toggleOff('#tologie_page'));
 });
 
 const on = document.querySelector('.on');
@@ -33,7 +33,19 @@ const programmation = document.querySelector('#programmation');
 const archi_centre = document.querySelector('#archi_centre');
 const voyage = document.querySelector('#voyage');
 const tennis = document.querySelector('#tennis');
-const archi1 = document.querySelector('#archi1');
+const topologie = document.querySelector('#topologie');
+
+const boutonTopologie = document.getElementById('topologie');
+const fenetreTopologie = document.getElementById('topologie_page');
+const boutonFermerTopologie = fenetreTopologie.querySelector('.modal-close22');
+
+boutonTopologie.addEventListener('click', function() {
+  fenetreTopologie.classList.add('on');
+});
+
+boutonFermerTopologie.addEventListener('click', function() {
+  fenetreTopologie.classList.remove('on');
+});
 
 
 reseau.addEventListener('click',()=>toggleOn('#reseau_page'));
@@ -42,9 +54,8 @@ archi.addEventListener('click',()=>toggleOn('#archi_page'));
 archi_centre.addEventListener('click',()=>toggleOn('#centre'));
 voyage.addEventListener('click',()=>toggleOn('#voyage_page'));
 tennis.addEventListener('click',()=>toggleOn('#tennis_page'));
-archi1.addEventListener('click',()=>toggleOn('#archi11'));
+topologie.addEventListener('click',()=>toggleOn('#tologie_page'));
 
-const archi11 = document.querySelectorAll('#archi11');
 
 const modalFollowButtons = document.querySelectorAll('.modal-follow22');
 
